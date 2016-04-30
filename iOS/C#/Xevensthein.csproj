@@ -86,8 +86,6 @@
     <ImageAsset Include="Resources\Images.xcassets\emoji.imageset\emoji.png" />
     <ImageAsset Include="Resources\Images.xcassets\emoji.imageset\emoji%402x.png" />
     <ImageAsset Include="Resources\Images.xcassets\emoji.imageset\emoji%403x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\Image.imageset\emoji%402x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\Image.imageset\emoji%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />

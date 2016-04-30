@@ -17,37 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hXZ-QV-8dL">
-                                <rect key="frame" x="20" y="40" width="560" height="335"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hXZ-QV-8dL">
+                                <rect key="frame" x="20" y="40" width="560" height="797"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji" translatesAutoresizingMaskIntoConstraints="NO" id="RkA-FY-THD">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="450"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="First Word" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYx-EK-pMB">
-                                        <rect key="frame" x="0.0" y="0.0" width="79" height="21"/>
+                                        <rect key="frame" x="0.0" y="462" width="79" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="88" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-bp-H0F">
-                                        <rect key="frame" x="0.0" y="33" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="495" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Second Word" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLv-mh-Pd4">
-                                        <rect key="frame" x="0.0" y="75" width="104" height="21"/>
+                                        <rect key="frame" x="0.0" y="537" width="104" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="108" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second Word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0LM-gX-Bf5">
-                                        <rect key="frame" x="0.0" y="107" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="569" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-be-0Ul">
-                                        <rect key="frame" x="0.0" y="149" width="560" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-be-0Ul">
+                                        <rect key="frame" x="0.0" y="611" width="560" height="30"/>
                                         <state key="normal" title="Compare"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-Zt-00c">
-                                        <rect key="frame" x="0.0" y="191" width="560" height="144"/>
+                                        <rect key="frame" x="0.0" y="653" width="560" height="144"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="120"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -55,12 +58,14 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="w3A-Zt-00c" secondAttribute="trailing" id="4Mh-iU-lBa"/>
+                                    <constraint firstAttribute="trailing" secondItem="RkA-FY-THD" secondAttribute="trailing" id="8Pa-H5-2A3"/>
                                     <constraint firstItem="w3A-Zt-00c" firstAttribute="leading" secondItem="hXZ-QV-8dL" secondAttribute="leading" id="Ccp-Ss-lA3"/>
                                     <constraint firstAttribute="trailing" secondItem="0LM-gX-Bf5" secondAttribute="trailing" id="JIc-3T-PGm"/>
                                     <constraint firstAttribute="trailing" secondItem="wI8-bp-H0F" secondAttribute="trailing" id="LCV-T0-4gl"/>
                                     <constraint firstItem="wI8-bp-H0F" firstAttribute="leading" secondItem="hXZ-QV-8dL" secondAttribute="leading" id="YKZ-WL-nmw"/>
                                     <constraint firstItem="Jcw-be-0Ul" firstAttribute="leading" secondItem="hXZ-QV-8dL" secondAttribute="leading" id="dtx-oR-Gjf"/>
                                     <constraint firstAttribute="trailing" secondItem="Jcw-be-0Ul" secondAttribute="trailing" id="eye-XA-f87"/>
+                                    <constraint firstItem="RkA-FY-THD" firstAttribute="leading" secondItem="hXZ-QV-8dL" secondAttribute="leading" id="fxo-7B-IKl"/>
                                     <constraint firstItem="0LM-gX-Bf5" firstAttribute="leading" secondItem="hXZ-QV-8dL" secondAttribute="leading" id="zpj-oZ-mxX"/>
                                 </constraints>
                             </stackView>
@@ -84,4 +89,7 @@
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="emoji" width="450" height="450"/>
+    </resources>
 </document>
