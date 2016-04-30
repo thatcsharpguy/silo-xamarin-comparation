@@ -3,10 +3,11 @@
 //  Xevensthein
 //
 //  Created by Antonio Feregrino Bolaños on 4/29/16.
-//  Copyright © 2016 Messier16. All rights reserved.
+//  Copyright © 2016 That C# guy. Some rights reserved.
 //
 
 import UIKit
+import XevenstheinCore
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -26,7 +27,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func compareButtonClicked(_sender : AnyObject?){
-        resultLabel.text = " Hola";
+        let result = LevenshteinDistance.compute( firstWordTextField.text!,t: secondWordTextField.text!);
+        resultLabel.text = String(result);
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

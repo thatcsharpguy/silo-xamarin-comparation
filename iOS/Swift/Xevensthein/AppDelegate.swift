@@ -3,7 +3,7 @@
 //  Xevensthein
 //
 //  Created by Antonio Feregrino Bolaños on 4/29/16.
-//  Copyright © 2016 Messier16. All rights reserved.
+//  Copyright © 2016 That C# guy. Some rights reserved.
 //
 
 import UIKit
