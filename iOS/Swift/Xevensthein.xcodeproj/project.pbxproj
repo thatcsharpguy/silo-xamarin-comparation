@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B94A45371CD4063E007E2E3B /* Xevensthein.Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94A45361CD405A6007E2E3B /* Xevensthein.Core.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		B94A453A1CD409C6007E2E3B /* Xevensthein.Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94A45361CD405A6007E2E3B /* Xevensthein.Core.framework */; };
+		B94A453B1CD409C6007E2E3B /* Xevensthein.Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B94A45361CD405A6007E2E3B /* Xevensthein.Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9D491201CD3C17E00092B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D4911F1CD3C17E00092B1F /* AppDelegate.swift */; };
 		B9D491221CD3C17E00092B1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D491211CD3C17E00092B1F /* ViewController.swift */; };
 		B9D491251CD3C17E00092B1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D491231CD3C17E00092B1F /* Main.storyboard */; };
@@ -14,7 +17,39 @@
 		B9D4912A1CD3C17E00092B1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D491281CD3C17E00092B1F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B94A45351CD405A6007E2E3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B94A45311CD405A6007E2E3B /* Xevensthein.Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B94A45261CD405A6007E2E3B;
+			remoteInfo = Xevensthein.Core;
+		};
+		B94A453C1CD409C6007E2E3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B94A45311CD405A6007E2E3B /* Xevensthein.Core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B94A45251CD405A6007E2E3B;
+			remoteInfo = Xevensthein.Core;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B94A453E1CD409C6007E2E3B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B94A453B1CD409C6007E2E3B /* Xevensthein.Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B94A45311CD405A6007E2E3B /* Xevensthein.Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Xevensthein.Core.xcodeproj; path = Xevensthein.Core/Xevensthein.Core.xcodeproj; sourceTree = "<group>"; };
 		B9D4911C1CD3C17E00092B1F /* Xev Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xev Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D4911F1CD3C17E00092B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9D491211CD3C17E00092B1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,15 +64,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94A45371CD4063E007E2E3B /* Xevensthein.Core.framework in Frameworks */,
+				B94A453A1CD409C6007E2E3B /* Xevensthein.Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B94A451B1CD40493007E2E3B /* Xevensthein.Core */ = {
+			isa = PBXGroup;
+			children = (
+				B94A45311CD405A6007E2E3B /* Xevensthein.Core.xcodeproj */,
+			);
+			name = Xevensthein.Core;
+			sourceTree = "<group>";
+		};
+		B94A45321CD405A6007E2E3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B94A45361CD405A6007E2E3B /* Xevensthein.Core.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B9D491131CD3C17E00092B1F = {
 			isa = PBXGroup;
 			children = (
+				B94A451B1CD40493007E2E3B /* Xevensthein.Core */,
 				B9D4911E1CD3C17E00092B1F /* Xevensthein */,
 				B9D4911D1CD3C17E00092B1F /* Products */,
 			);
@@ -74,10 +128,12 @@
 				B9D491181CD3C17E00092B1F /* Sources */,
 				B9D491191CD3C17E00092B1F /* Frameworks */,
 				B9D4911A1CD3C17E00092B1F /* Resources */,
+				B94A453E1CD409C6007E2E3B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B94A453D1CD409C6007E2E3B /* PBXTargetDependency */,
 			);
 			name = Xevensthein;
 			productName = Xevenshthen;
@@ -110,12 +166,28 @@
 			mainGroup = B9D491131CD3C17E00092B1F;
 			productRefGroup = B9D4911D1CD3C17E00092B1F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B94A45321CD405A6007E2E3B /* Products */;
+					ProjectRef = B94A45311CD405A6007E2E3B /* Xevensthein.Core.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B9D4911B1CD3C17E00092B1F /* Xevensthein */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B94A45361CD405A6007E2E3B /* Xevensthein.Core.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Xevensthein.Core.framework;
+			remoteRef = B94A45351CD405A6007E2E3B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B9D4911A1CD3C17E00092B1F /* Resources */ = {
@@ -141,6 +213,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B94A453D1CD409C6007E2E3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Xevensthein.Core;
+			targetProxy = B94A453C1CD409C6007E2E3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B9D491231CD3C17E00092B1F /* Main.storyboard */ = {
@@ -249,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Xevensthein/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thatcsharpguy.xevensthein.swift;
@@ -260,6 +341,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Xevensthein/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.thatcsharpguy.xevensthein.swift;
