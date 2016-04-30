@@ -18,48 +18,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Lhn-UN-1ux">
-                                <rect key="frame" x="20" y="40" width="560" height="335"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Lhn-UN-1ux">
+                                <rect key="frame" x="20" y="40" width="560" height="497"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="emoji" translatesAutoresizingMaskIntoConstraints="NO" id="Eru-G0-2t7">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="150"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="First word" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lly-e1-SPk">
-                                        <rect key="frame" x="0.0" y="0.0" width="76" height="21"/>
+                                        <rect key="frame" x="0.0" y="162" width="76" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="niH-GT-ZS7">
-                                        <rect key="frame" x="0.0" y="33" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="195" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Second word" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61I-R3-akG">
-                                        <rect key="frame" x="0.0" y="75" width="101" height="21"/>
+                                        <rect key="frame" x="0.0" y="237" width="101" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hIf-xr-Ngu">
-                                        <rect key="frame" x="0.0" y="107" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="269" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lv-gA-QRy">
-                                        <rect key="frame" x="0.0" y="149" width="560" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lv-gA-QRy">
+                                        <rect key="frame" x="0.0" y="311" width="560" height="30"/>
                                         <state key="normal" title="Compare"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7O-rx-Vib">
-                                        <rect key="frame" x="0.0" y="191" width="560" height="144"/>
+                                        <rect key="frame" x="0.0" y="353" width="560" height="144"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="120"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Eru-G0-2t7" firstAttribute="leading" secondItem="Lhn-UN-1ux" secondAttribute="leading" id="5NJ-83-u6q"/>
                                     <constraint firstItem="hIf-xr-Ngu" firstAttribute="leading" secondItem="Lhn-UN-1ux" secondAttribute="leading" id="F3v-aa-WkR"/>
                                     <constraint firstAttribute="trailing" secondItem="A7O-rx-Vib" secondAttribute="trailing" id="G7P-W6-ypy"/>
                                     <constraint firstAttribute="trailing" secondItem="hIf-xr-Ngu" secondAttribute="trailing" id="Ni5-QJ-h8b"/>
                                     <constraint firstItem="niH-GT-ZS7" firstAttribute="leading" secondItem="Lhn-UN-1ux" secondAttribute="leading" id="RRw-EV-Vzh"/>
                                     <constraint firstAttribute="trailing" secondItem="8lv-gA-QRy" secondAttribute="trailing" id="WDI-cX-NGY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eru-G0-2t7" secondAttribute="trailing" id="iIW-3o-24k"/>
                                     <constraint firstItem="A7O-rx-Vib" firstAttribute="leading" secondItem="Lhn-UN-1ux" secondAttribute="leading" id="pcg-qY-YpF"/>
                                     <constraint firstItem="8lv-gA-QRy" firstAttribute="leading" secondItem="Lhn-UN-1ux" secondAttribute="leading" id="qPG-JM-ABl"/>
                                     <constraint firstAttribute="trailing" secondItem="niH-GT-ZS7" secondAttribute="trailing" id="z4V-G7-UiP"/>
@@ -85,4 +90,7 @@
             <point key="canvasLocation" x="140" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="emoji" width="150" height="150"/>
+    </resources>
 </document>
