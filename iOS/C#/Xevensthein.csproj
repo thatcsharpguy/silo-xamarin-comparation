@@ -100,4 +100,10 @@
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="Xevensthein.Core\Xevensthein.Core.csproj">
+      <Project>{A0FB94FE-FC44-464A-81C1-8D031D3531A9}</Project>
+      <Name>Xevensthein.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

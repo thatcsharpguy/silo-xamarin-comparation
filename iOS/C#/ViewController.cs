@@ -1,6 +1,6 @@
 ﻿using System;
-
 using UIKit;
+using Xevensthein.Core;
 
 namespace Xevensthein
 {
@@ -22,7 +22,12 @@ namespace Xevensthein
             CompareButton.TouchUpInside += CompareButtonClicked;
         }
 
-
+        void CompareButtonClicked (object sender, EventArgs e)
+        {
+            var result = LevenshteinDistance.Compute(FirstWordTextField.Text, SecondWordTextField.Text);
+            ResultLabel.Text = result.ToString();
+        }
+            
         [Foundation.Export("textFieldShouldReturn:")]
         public bool ShouldReturn(UIKit.UITextField textField)
         {
@@ -36,11 +41,6 @@ namespace Xevensthein
                 SecondWordTextField.ResignFirstResponder();
             }
             return true;
-        }
-
-        void CompareButtonClicked (object sender, EventArgs e)
-        {
-            ResultLabel.Text = "Hola";
         }
 
         public override void DidReceiveMemoryWarning()
