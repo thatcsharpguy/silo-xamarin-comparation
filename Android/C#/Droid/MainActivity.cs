@@ -1,11 +1,15 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Support.V7.App;
 
 namespace Xevensthein
 {
-    [Activity(Label = "Xev C#", MainLauncher = true, Icon = "@mipmap/icon")]
-    public class MainActivity : Activity
+    [Activity(Label = "Xev C#", 
+        Theme="@style/AppTheme",
+        MainLauncher = true, 
+        Icon = "@mipmap/icon")]
+    public class MainActivity : AppCompatActivity
     {
         int count = 1;
 
