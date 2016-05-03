@@ -32,8 +32,10 @@
         android:layout_width="match_parent"
         android:hint="First Word"
         android:imeOptions="actionNext"
+        android:nextFocusDown="@+id/secondWordEditText"
         android:layout_height="wrap_content"
-        android:id="@+id/firstWordEditText" />
+        android:id="@+id/firstWordEditText"
+        android:singleLine="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,14 +48,16 @@
         android:layout_width="match_parent"
         android:hint="Second Word"
         android:imeOptions="actionDone"
+        android:nextFocusDown="@+id/compareButton"
         android:layout_height="wrap_content"
-        android:id="@+id/secondWordEditText" />
+        android:id="@+id/secondWordEditText"
+        android:singleLine="true" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Compare"
-        android:id="@+id/computeButton" />
+        android:id="@+id/compareButton" />
 
     <TextView
         android:layout_width="wrap_content"

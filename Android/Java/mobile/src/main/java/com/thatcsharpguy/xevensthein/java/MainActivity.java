@@ -11,7 +11,7 @@ import com.thatcsharpguy.xevenstheincore.LevenstheinDistance;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button _computeButton;
+    Button _compareButton;
     TextView _resultTextView;
     EditText _firstWordEditText;
     EditText _secondWordEditText;
@@ -21,12 +21,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        _computeButton= (Button) this.findViewById(R.id.computeButton);
+        _compareButton = (Button) this.findViewById(R.id.compareButton);
         _firstWordEditText=(EditText) this.findViewById(R.id.firstWordEditText);
         _secondWordEditText=(EditText) this.findViewById(R.id.secondWordEditText);
         _resultTextView=(TextView)this.findViewById(R.id.resultTextView);
 
-        _computeButton.setOnClickListener(new View.OnClickListener(){
+        _compareButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 int res = LevenstheinDistance.Compute(_firstWordEditText.getText().toString(),_secondWordEditText.getText().toString());
