@@ -24,7 +24,8 @@ namespace Xevensthein
 
         void CompareButtonClicked (object sender, EventArgs e)
         {
-            var result = LevenshteinDistance.Compute(FirstWordTextField.Text, SecondWordTextField.Text);
+            var result = LevenshteinDistance.Compute(FirstWordTextField.Text, 
+                SecondWordTextField.Text);
             ResultLabel.Text = result.ToString();
         }
             
