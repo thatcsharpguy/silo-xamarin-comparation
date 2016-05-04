@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        _compareButton = (Button) this.findViewById(R.id.compareButton);
-        _firstWordEditText=(EditText) this.findViewById(R.id.firstWordEditText);
-        _secondWordEditText=(EditText) this.findViewById(R.id.secondWordEditText);
-        _resultTextView=(TextView)this.findViewById(R.id.resultTextView);
+        _compareButton = (Button)findViewById(R.id.compareButton);
+        _firstWordEditText=(EditText) findViewById(R.id.firstWordEditText);
+        _secondWordEditText=(EditText) findViewById(R.id.secondWordEditText);
+        _resultTextView=(TextView)findViewById(R.id.resultTextView);
 
         _compareButton.setOnClickListener(new View.OnClickListener(){
             @Override
