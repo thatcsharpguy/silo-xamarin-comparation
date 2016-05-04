@@ -93,4 +93,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Xevensthein.Core.csproj">
+      <Project>{9FECA28D-E910-4D60-B686-7487EB516C38}</Project>
+      <Name>Xevensthein.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

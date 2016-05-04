@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xevensthein", "Droid/Xevensthein.csproj", "{5EA0090C-3D3C-46CD-B0A4-99B3E0CE44D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xevensthein.Mobile", "Droid\Xevensthein.Mobile.csproj", "{5EA0090C-3D3C-46CD-B0A4-99B3E0CE44D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xevensthein.Core", "Core\Xevensthein.Core.csproj", "{9FECA28D-E910-4D60-B686-7487EB516C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xevensthein.Wear", "Wear\Xevensthein.Wear.csproj", "{15542C41-9466-4098-9590-741D101F0042}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +13,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15542C41-9466-4098-9590-741D101F0042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15542C41-9466-4098-9590-741D101F0042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15542C41-9466-4098-9590-741D101F0042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15542C41-9466-4098-9590-741D101F0042}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5EA0090C-3D3C-46CD-B0A4-99B3E0CE44D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5EA0090C-3D3C-46CD-B0A4-99B3E0CE44D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EA0090C-3D3C-46CD-B0A4-99B3E0CE44D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EA0090C-3D3C-46CD-B0A4-99B3E0CE44D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FECA28D-E910-4D60-B686-7487EB516C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FECA28D-E910-4D60-B686-7487EB516C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FECA28D-E910-4D60-B686-7487EB516C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FECA28D-E910-4D60-B686-7487EB516C38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
