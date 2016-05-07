@@ -1,11 +1,9 @@
 package com.thatcsharpguy.xevensthein.java;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v7.app.*;
+import android.os.*;
+import android.widget.*;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import com.thatcsharpguy.xevenstheincore.LevenstheinDistance;
 
@@ -29,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
         _compareButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                int res = LevenstheinDistance.Compute(_firstWordEditText.getText().toString(),_secondWordEditText.getText().toString());
+                int res = LevenstheinDistance.Compute(
+                        _firstWordEditText.getText().toString(),
+                        _secondWordEditText.getText().toString());
                 _resultTextView.setText(Integer.toString(res));
             }
         });
