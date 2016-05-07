@@ -1,16 +1,13 @@
-﻿using Android.App;
-using Android.Widget;
+﻿using Android.Support.V7.App;
 using Android.OS;
-using Android.Support.V7.App;
+using Android.Widget;
+using Android.App;
 
 using Xevensthein.Core;
 
 namespace Xevensthein
 {
-    [Activity(Label = "Xev C#", 
-        Theme="@style/AppTheme",
-        MainLauncher = true, 
-        Icon = "@mipmap/icon")]
+    [Activity(MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
         Button _compareButton;
@@ -29,7 +26,9 @@ namespace Xevensthein
             _resultTextView = FindViewById<TextView>(Resource.Id.resultTextView);
 
             _compareButton.Click += (sender, e) => {
-                var res = LevenshteinDistance.Compute(_firstWordEditText.Text,_secondWordEditText.Text);
+                var res = LevenshteinDistance.Compute(
+                    _firstWordEditText.Text,
+                    _secondWordEditText.Text);
                 _resultTextView.Text  = res.ToString();
             };
         }
